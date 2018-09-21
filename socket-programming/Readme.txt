@@ -66,12 +66,11 @@ Apart, from the header files that are enlisted in the socket programming project
 Also, I have implemented fork() that is concurrent process. But I have obtained help regarding this from the reference that I have enlisted below.
 
 g.Reuse of the code:-
-Socket programming in C, was a good challenge for me. The reason being, I have hardly any experience in C program. To overcome this, I took help from the following books and site.
+Socket programming in C, was a good challenge for me.I took help from the following books and site.
 (a) Book:- Beej Reference guide
 (b) Web-site:-
 www.linuxhowtos.org/C_C++/socket.html :- From this, I got help for UDP socket as well as fork() process
-http://www.geeksforgeeks.org/socket-programming-cc:- From this, I got help for TCP connection set up
-stackoverflow:- I used this to obtain the exact function that converts float to character.
+
 
 
 
