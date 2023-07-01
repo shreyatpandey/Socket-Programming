@@ -4,11 +4,15 @@ The problem statement of the given project has laid a definite guidelines for me
 
 # Source Files:-
   In total I have 5 files, i.e:-
- (i) client.c:- In this the user would take in the input which consist of function and a value through the command line and send it to the aws through the TCP connection
- (ii) aws.c:- It is the main server which would receive the input function and a value from the client side. The value would be extracted from the buffer and passed it to the backend server i.e,serveA,serverB and serverC. It will then receive the power of the input value,i.e,2,4,5,6. On the other hand in the function part, my aws.c program would check whether the input string is a logarithm or divion fucntion. Accordingly, it wil calculate its value, as per the formula stated in the problem statement.
- (iii)serverA.c:- This code is specifically dedicated to the calculation of the square value of the input. Once the value is received from the aws, it would performs its calculation and return the square as well the fourth power value to the aws. It is important to note that for fourth power value,serverA would be called twice in aws.
-  (iv) serverB.c:- This code is specifically dedicated to the calculation of the cube value of the input. Once the value is received from the aws, it would performs its calculation and return the cube as well the sixth power value to the aws. It is important to note that for sixth value,serverB would be called twice in aws.
- (v) serverC.c:- This code is specifically dedicated to the calculation of the fifth power value of the input. Once the value is received from the aws, it would performs its calculation and return the fifth power value to the aws.
+   * client.c:- In this the user would take in the input which consist of function and a value through the command line and send it to the aws through the TCP connection
+    
+  * aws.c:- It is the main server which would receive the input function and a value from the client side. The value would be extracted from the buffer and passed it to the backend server i.e,serveA,serverB and serverC. It will then receive the power of the input value,i.e,2,4,5,6. On the other hand in the function part, my aws.c program would check whether the input string is a logarithm or divion fucntion. Accordingly, it wil calculate its value, as per the formula stated in the problem statement.
+    
+* serverA.c:- This code is specifically dedicated to the calculation of the square value of the input. Once the value is received from the aws, it would performs its calculation and return the square as well the fourth power value to the aws. It is important to note that for fourth power value,serverA would be called twice in aws.
+  
+ * serverB.c:- This code is specifically dedicated to the calculation of the cube value of the input. Once the value is received from the aws, it would performs its calculation and return the cube as well the sixth power value to the aws. It is important to note that for sixth value,serverB would be called twice in aws.
+   
+ * serverC.c:- This code is specifically dedicated to the calculation of the fifth power value of the input. Once the value is received from the aws, it would performs its calculation and return the fifth power value to the aws.
 
 # Format of all messages exchanged:-
 1.client:- The client is up and running
@@ -62,9 +66,8 @@ Also, I have implemented fork() that is concurrent process. But I have obtained 
 
 # Resources used in this project:-
   Socket programming in C, was a good challenge for me.I took help from the following books and site.
-  (a) Book:- Beej Reference guide
-  (b) Web-site:-
-    www.linuxhowtos.org/C_C++/socket.html :- From this, I got help for UDP socket as well as fork() process
+  * Book:- Beej Reference guide
+  * Web-site:- www.linuxhowtos.org/C_C++/socket.html :- From this, I got help for UDP socket as well as fork() process
 
 
 
