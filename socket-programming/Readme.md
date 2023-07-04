@@ -3,7 +3,7 @@
 The problem statement of the given project has laid a definite guidelines for me to execute the project. I have done my project along these lines. The  ouput format as well as the input format for the project has been followed by me.
 
 # Source Files:-
-  In total I have 5 files, i.e:-
+  In total I have 5 files:-
    * client.c:- In this the user would take in the input which consist of function and a value through the command line and send it to the aws through the TCP connection
     
   * aws.c:- It is the main server which would receive the input function and a value from the client side. The value would be extracted from the buffer and passed it to the backend server i.e,serveA,serverB and serverC. It will then receive the power of the input value,i.e,2,4,5,6. On the other hand in the function part, my aws.c program would check whether the input string is a logarithm or divion fucntion. Accordingly, it wil calculate its value, as per the formula stated in the problem statement.
@@ -15,17 +15,19 @@ The problem statement of the given project has laid a definite guidelines for me
  * serverC.c:- This code is specifically dedicated to the calculation of the fifth power value of the input. Once the value is received from the aws, it would performs its calculation and return the fifth power value to the aws.
 
 # Format of all messages exchanged:-
-1.client:- The client is up and running
-          The client sent <0.25> and <LOG> to AWS
-          According to AWS<LOG> on <0.25>:-0.28767090
+1.client:- 
+    The client is up and running
+    The client sent <0.25> and <LOG> to AWS
+    According to AWS<LOG> on <0.25>:-0.28767090
 
-2.serverA:- The serverA is up and running using UDP on port<21882>
-            The serverA received the input<0.25>
-            The server A calculated square <0.0625>
-           The server A finished sending the output to AWS
-           The Server A received the input <0.0625000000>
-           The server A calculated square <0.00390625>
-           The server A finished sending the output to AWS
+2.serverA:- 
+    The serverA is up and running using UDP on port<21882>
+    The serverA received the input<0.25>
+    The server A calculated square <0.0625>
+    The server A finished sending the output to AWS
+    The Server A received the input <0.0625000000>
+    The server A calculated square <0.00390625>
+    The server A finished sending the output to AWS
 
   3.serverB:- 
     The Server B is up and running using UDP on port <22882>
